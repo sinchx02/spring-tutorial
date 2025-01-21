@@ -1,13 +1,17 @@
 package com.Spring1.calender;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CalenderApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CalenderApplication.class, args);
+		SpringApplication.run(Application.class, args);
+
+
+
 	}
 
 }
