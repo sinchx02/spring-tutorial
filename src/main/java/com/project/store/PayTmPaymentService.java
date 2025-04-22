@@ -1,5 +1,8 @@
 package com.project.store;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class PayTmPaymentService implements PaymentService
 {
     public void payment(double amount) {
