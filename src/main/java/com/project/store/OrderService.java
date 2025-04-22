@@ -6,10 +6,12 @@ import org.springframework.stereotype.Service;
 
 @Service // annotation to treat class as bean
 public class OrderService {
+    @Autowired //@Autowired as there are more than one constructor
     private PaymentService paymentService;
 
-    // does not require @Autowired as there is single constructor used
- public OrderService(PaymentService paymentService){ //passing the injection in contructor
+    public OrderService(){}
+
+    public OrderService(PaymentService paymentService){ //passing the injection in contructor
         this.paymentService=paymentService;
     }
     public void placeOrder()
